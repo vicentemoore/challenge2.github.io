@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: 'Montserrat', sans-serif;
+    --font2:'Fraunces', serif;
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(158, 74%, 17%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background: var(--Cream);
+}
+
+.card {
+    position: relative;
+    margin: 170px auto 170px;
+    height: 450px;
+    width: 600px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: var(--White);
+}
+
+img {
+    border-radius: 8px 0 0 8px;
+}
+
+.card div {
+    padding: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: var(--font1);
+    font-weight: 500;
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+
+.card span {
+    font-family: var(--font2);
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.p {
+    font-size: 14px;
+    padding-top: 20px;
+    font-family: var(--font1);
+    font-weight: 500;
+    color: var(--DarkGrayishBlue);
+    line-height: 22px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font2);
+    align-items: center;
+}
+
+.price1 {
+    font-size: 30px;
+    margin-right: 23px;
+    color: var(--DarkCyan);
+}
+
+.price2 {
+    font-size: 12px;
+    color: var(--DarkGrayishBlue);
+    margin-right: 50px;
+}
+button {
+    background: var(--DarkCyan);
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    color: var(--White);
+    font-family: var(--font1);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover {
+    transition: 0.5s ease;
+    background: var(--VeryDarkBlue);
+}
+.iconCart {
+    border-radius: 0;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 55px;
+}
+
+.attribution {
+    font-family: var(--font1);
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
