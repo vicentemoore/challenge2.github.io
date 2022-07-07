@@ -1,1 +1,1 @@
-My solution for a Frotend Mentor Challenge
+My solution for a "Frotend Mentor" Challenge
